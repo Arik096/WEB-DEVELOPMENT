@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    </style>
+    <title>statements</title>
+  </head>
+  <body>
+    <p style="display:inline" id=p1>sum=</p>
+    <p style="display:inline" id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+    <p id="p6"></p>
+    <p id="p7"></p>
+    <p id="p8"></p>
+    <p id="p9"></p>
+    <p id="p10"></p>
+    <p id="p11"></p>
+    <p id="p12"></p>
+    <p id="p13"></p>
+    <p id="p14"></p>
+    <p id="p15"></p>
+    <p id="p16"></p>
+    <p id="p17"></p>
+    <p id="p18"></p>
+    <p id="p19"></p>
+    <p id="p20"></p>
+    <p id="p21"></p>
+    <p id="p22"></p>
+    <p id="p23"></p>
+    <p id="p24"></p>
+    <p id="p25"></p>
+    <script>
+      var x,y,z;
+      x=10;
+      y=20;
+      z=x+y;
+      var a='arik md isthiaque'
+      var h="as"
+      var b=[1,2,3];
+      var c={name:'ariks',age:'24'};
+      document.getElementById('p2').innerHTML=z;
+      document.getElementById('p3').innerHTML=typeof c;
+      document.getElementById('p4').innerHTML=c.name.length;
+      document.getElementById('p5').innerHTML=a.indexOf("th");
+      document.getElementById('p6').innerHTML=a.lastIndexOf("a");
+      document.getElementById('p7').innerHTML=a.search("md");
+      document.getElementById('p8').innerHTML=a.slice(5,7);
+      document.getElementById('p9').innerHTML=a.slice(5);
+      document.getElementById('p10').innerHTML=a.slice(-5);
+      document.getElementById('p11').innerHTML=a.substring(5); //same but cannot accept neagtive value
+      document.getElementById('p12').innerHTML=a.substr(5,2); //same but 2nd parameter is the lenght of the string
+      document.getElementById('p13').innerHTML=a.replace("a","A");
+      document.getElementById('p14').innerHTML=a.replace(/a/g,"A"); //to replace all a
+      document.getElementById('p15').innerHTML=a.toUpperCase();
+      document.getElementById('p16').innerHTML=a.toLowerCase();
+      document.getElementById('p17').innerHTML=a.concat(" ",c.name);
+      document.getElementById('p18').innerHTML=a.charAt(3);
+      document.getElementById('p19').innerHTML=a.charCodeAt(3);
+      document.getElementById('p20').innerHTML=a[3];
+      document.getElementById('p21').innerHTML=a.split(" "); //split at space
+      document.getElementById('p22').innerHTML=a.split(""); // split by character
+
+    </script>
+  </body>
+</html>
