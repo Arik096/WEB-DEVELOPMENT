@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .header{
+        border: 5px solid black;
+        text-align: center;
+        padding: 2px;
+      }
+      .from{
+        border: 5px solid black;
+      }
+    </style>
+    <title>input types</title>
+  </head>
+  <body>
+
+<h1 class="header">From</h1>
+
+<form class="from">
+
+<fieldset>
+  <legend>Personal Details</legend>
+  <label for="name">Name:</label><br>
+  <input type="text" name="name" value="" size="50"><br>
+  <label for="id">ID:</label><br>
+  <input type="number" name="id" value=""><br>
+  <label for="pass">Password:</label><br>
+  <input type="password" name="pass" value=""><br>
+  <button type="button" onclick="alert('logged in')" name="log_in">Log In</button>
+</fieldset>
+
+<fieldset>
+  <legend>Other Details</legend>
+  <label for="dob">DOB:</label><br>
+  <input type="date" name="dob" value="" max="2030-12-12" min="2000-12-12"><br>
+  <label for="email">Email:</label><br>
+  <input type="email" name="eamil" value=""><br>
+  <label for="time">Time:</label><br>
+  <input type="time" name="time" value=""><br>
+  <label for="file">File:</label><br>
+  <input type="file" name="file" value=""><br>
+  <input type="submit" onclick="alert('submitted')" name="submit" value="submit"><br>
+  <input type="reset" name="reset" value="reset">
+</fieldset>
+
+<fieldset>
+  <legend>Radio</legend>
+  <label for="radio">Select any</label><br>
+  <input type="radio" id="1" name="1" value="1">
+  <label for="1">1</label><br>
+  <input type="radio" id="2" name="2" value="2">
+  <label for="2">2</label><br>
+</fieldset>
+
+<fieldset>
+  <legend>Cheakbox</legend>
+  <label for="checkbox">Select</label><br>
+  <input type="checkbox" id="3" name="3" value="3">
+  <label for="3">1</label><br>
+  <input type="checkbox" id="4" name="4" value="4">
+  <label for="4">4</label><br>
+</fieldset>
+
+<fieldset>
+  <legend>colors</legend>
+  <label for="colors">select a color</label>
+  <input type="color" name="color" value="#ff0000"><br>
+  <input type="submit" name="sub" value="submit">
+</fieldset>
+
+</form>
+
+  </body>
+</html>

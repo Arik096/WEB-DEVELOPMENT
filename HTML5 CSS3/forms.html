@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .form{
+        background-color: white;
+        padding: 10px;
+        border: 5px solid black;
+
+      }
+    </style>
+    <title>form</title>
+  </head>
+  <body>
+    <form class="form">
+      <h1 style="text-align:center;border:5px solid black;">Form Design</h1>
+      <label for="fname">First Name:</label><br>
+      <input type="text" name="fname" value=""><br>
+      <label for="lname">Last Name:</label><br>
+      <input type="text" name="lname" value=""><br>
+
+      <label>Gender:</label><br>
+      <input type="radio" id="male" name="male" value="male">
+      <label for="male">Male</label><br>
+      <input id="female" type="radio" name="female" value="female">
+      <label for="female">Female</label><br><br>
+
+      <label for="class">Class</label>
+      <select name="class">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+
+      </select><br><br>
+      <label for="massage">Remark</label><br>
+      <textarea name="massage" rows="8" cols="20">tell us something.......</textarea><br>
+
+      <input type="submit" name="submit" onclick="alert('submitted')" value="submit"><br><br>
+      <button type="button" onclick="alert('submitted')">submit</button>
+      <br>
+
+      <fieldset>
+        <legend>portion</legend>
+        <label for="name">Name:</label><br>
+        <input type="text" name="name" value=""><br>
+        <label for="id">ID:</label><br>
+        <input type="text" name="id" value="">
+
+      </fieldset>
+    </form>
+  </body>
+</html>

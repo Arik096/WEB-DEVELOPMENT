@@ -1,0 +1,35 @@
+body {background-color: gray;
+}
+
+h1 {color: red;
+  text-align: center;
+  font-family: cursive;
+  border: 2px solid green;
+}
+
+#p1 {color: tomato;
+border: 2px solid tomato;
+padding: 30px;
+}
+
+#p2 {color: green;
+border: 2px solid black;
+padding: 30px;
+}
+
+.new
+{
+  color: red;
+  border: 5px solid tomato;
+  text-align: center;
+  padding: 5px;
+  font-size: 500%;
+
+}
+table, th, td
+{
+  border: solid black;
+  border-collapse: collapse;
+  padding: 5px;
+  text-align: center;
+}
