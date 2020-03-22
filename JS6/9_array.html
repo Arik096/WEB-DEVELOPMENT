@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>array</title>
+  </head>
+  <body>
+    <p id="p1"></p>
+    <br>
+    <p id="p2" style="border:2px solid tomato"></p>
+    <script>
+      var arr=[40,70,60];
+      document.getElementById('p1').innerHTML="lenght of array = "+arr.length+"<br>"+arr.sort();
+
+      var arr1=['arik','puja','prointy','afrid'];
+      arr1.push('pritilata')
+      var len=arr1.length;
+      arr1[len]='biswas'
+      len=arr1.length;
+      var i;
+      var text="<ul>";
+      for(i=0;i<len;i++)
+      {
+        text=text+"<li>"+arr1[i]+"</li>";
+      }
+      text=text+"</ul>";
+      document.getElementById('p2').innerHTML=text;
+    </script>
+  </body>
+</html>
