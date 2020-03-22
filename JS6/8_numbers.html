@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Numbers</title>
+  </head>
+  <body>
+    <p id="p1"></p>
+    <br>
+    <p id="p2"></p>
+    <br>
+    <p id="p3"></p>
+    <br>
+    <p id="p4"></p>
+    <br>
+    <p id="p5"></p>
+    <br>
+    <p id="p6"></p>
+    <br>
+    <script>
+
+    var num=100;
+      document.getElementById('p1').innerHTML="10 base = "+num.toString(10)+"<br>"+"2 base = "+num.toString(2)+"<br>"+"8 base = "+num.toString(8)+"<br>"+"16 base = "+num.toString(16)+"<br>"+"32 base = "+num.toString(32)+"<br>"+typeof num.toString(10);
+
+      var num1=2;
+      document.getElementById('p2').innerHTML=num1.toExponential(4);
+
+      var num2=9.13494;
+      document.getElementById('p3').innerHTML=num2.toFixed(3);
+
+      var num3=3.34644444;
+      document.getElementById('p4').innerHTML=num3.toPrecision(3)+"<br>"+"value of num3 = "+num3.valueOf()+"<br>"+parseInt(num3)+"<br>"+parseFloat(num);
+
+    </script>
+  </body>
+</html>
