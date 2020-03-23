@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>object</title>
+  </head>
+  <body>
+    <script>
+      // with out constructor
+      var student1={
+        name:"arik",
+        id:1103096,
+        cgpa:3.67,
+      }
+      var student2={
+        name:"puja",
+        id:1103017,
+        cgpa:3.87,
+      }
+      document.write(student1.name+"<br>"+student2.name+"<br>");
+      // with constructor
+      function CSE(name,id,level,term){
+        this.name=name;
+        this.id=id;
+        this.level=level;
+        this.term=term;
+
+        this.dispaly=function()
+        {
+          document.write(this.name+"<br>")
+          document.write(this.id+"<br>")
+          document.write(this.level+"<br>")
+          document.write(this.term+"<br>")
+        }
+      }
+      var cse1 = new CSE("isthiaque",1103096,4,2);
+      var cse2= new CSE("pritilata",1103017,4,2);
+      cse1.dispaly();
+      cse2.dispaly();
+    </script>
+  </body>
+</html>
