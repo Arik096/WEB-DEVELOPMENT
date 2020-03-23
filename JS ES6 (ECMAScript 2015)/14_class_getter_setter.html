@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>class getter setter</title>
+  </head>
+  <body>
+    <p id="p1"></p>
+    <script>
+      class Car{
+        constructor(brand)
+        {
+          this.carname=brand;
+        }
+        get cname(){
+          return this.carname;
+        }
+        set cname(x){
+          this.carname=x;
+        }
+      }
+
+      mycar= new Car("ford");
+      mycar.cname="bmw";
+      document.getElementById('p1').innerHTML=mycar.cname;
+    </script>
+  </body>
+</html>
