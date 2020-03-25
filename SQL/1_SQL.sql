@@ -1,3 +1,6 @@
+--> Northwind sample database <--
+
+
 // table 1 name --> Customers
 // columns --> CustomerID, CustomerName, ContactName, Address, City, PostalCode, Country
 
