@@ -41,3 +41,33 @@ DROP TABLE Person;
 
 // TRUNCATE TABLE --> empty table data
 TRUNCATE TABLE Person;
+
+
+// ALTER TABLE
+ALTER TABLE Person ADD DOB date; --> add column
+ALTER TABLE Person MODIFY COULUMN DOB year; -->change column data type
+ALTER TABLE Person DROP DOB; --> drop column
+
+
+// Constraints NOT NULL
+CREATE TABLE Person(PersonID int NOT NULL, LastName varchar(255) NOT NULL, FirstName varchar(255) NOT NULL, City varchar(255) NOT NULL);
+
+
+// Constraints UNIQUE
+CREATE TABLE Person(PersonID int NOT NULL UNIQUE, LastName varchar(255) NOT NULL, FirstName varchar(255) NOT NULL, City varchar(255) NOT NULL);
+
+
+// Constraints PRIMARY KEY
+CREATE TABLE Person(PersonID int NOT NULL, LastName varchar(255) NOT NULL, FirstName varchar(255) NOT NULL, City varchar(255) NOT NULL, PRIMARY KEY(PersonID));
+
+
+// Constraints FOREIGN KEY REFERENCES
+// CREATE TABLE Order(OrderID int NOT NULL UNIQUE, PersonID NOT NULL, PRIMARY KEY(OrderID), FOREIGN KEY REFERENCES Person(PersonID));
+
+
+// Constraints AUTO_INCREMENT
+// CREATE TABLE Person(PersonID int NOT NULL AUTO_INCREMENT, LastName varchar(255) NOT NULL, FirstName varchar(255) NOT NULL, City varchar(255) NOT NULL);
+
+
+// CREATE VIEW
+// CREATE VIEW view_person AS SELECT * FROM Person WHERE City='Dhaka';
