@@ -21,3 +21,23 @@
 
 // table 7 name --> OrderDetails
 // columns --> OrderDetailID,	OrderID,	ProductID,	Quantity
+
+
+// CREATE DATABASE --> create new database
+CREATE DATABASE Northwind;
+
+
+//DROP DATABASE
+DROP DATABASE Northwind;
+
+
+// CREATE TABLE
+CREATE TABLE Person(PersonID int, LastName varchar(255), FirstName varchar(255), City varchar(255));
+
+
+// DROP TABLE
+DROP TABLE Person;
+
+
+// TRUNCATE TABLE --> empty table data
+TRUNCATE TABLE Person;
