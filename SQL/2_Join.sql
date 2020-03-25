@@ -55,7 +55,7 @@ SELECT COUNT(CustomerID), Country FROM Customers GROUP BY Country HAVING COUNT(C
 SELECT Employees.FirstName, COUNT(Orders.OrderID) FROM Orders INNER JOIN Employees ON Orders.EmployeeID=Employees.EmployeeID HAVING COUNT(Orders.OrderID)>10;
 
 
-// SELECT INTO --> copy some columns into a new table
+// SELECT INTO --> copy columns into a new table
 SELECT CustomerID, CustomerName INTO New_Customers FROM Customers WHERE Country='USA';
 
 
