@@ -5,7 +5,7 @@
     <title>form handling</title>
   </head>
   <body>
-    <form id="f1" action="13_output_page.php" method="post">
+    <form id="f1" action="extra/13_output_page.php" method="post">
       <label id="l1">From</label>
       <br>
       <label for="">Name:</label>
