@@ -1,0 +1,8 @@
+#f1{
+  border: 5px solid black;
+  padding: 10px;
+  line-height: 50px;
+}
+#i1, #i2{
+  width: 300px;
+}
