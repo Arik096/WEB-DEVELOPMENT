@@ -1,0 +1,14 @@
+#f1{
+  border: 2px solid tomato;
+  padding: 10px;
+  line-height: 50px;
+}
+#l1{
+  border: 2px solid tomato;
+  padding: 5px;
+  text-align: center;
+  border-width: thin;
+}
+#i1, #i2{
+  width: 300px;
+}
