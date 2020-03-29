@@ -51,17 +51,17 @@
 
 
 
-    <form action="extra/16_output_page.php" method="post">
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
       <h1>PHP From Validation</h1>
       <br>
       <p style="color:red"><sup>*</sup>required field</p>
       <br>
       <fieldset style="line-height:30px;">
         <label>Name:</label>
-        <input type="text" name="name"><sup style="color:red">*</sup><span><?php echo $nameError; ?></span>
+        <input type="text" name="name"><sup style="color:red">*</sup><span style="color:red"><?php echo $nameError; ?></span>
         <br>
         <label>Email:</label>
-        <input type="email" name="email"><sup style="color:red">*</sup><span><?php echo $emailError; ?></span>
+        <input type="email" name="email"><sup style="color:red">*</sup><span style="color:red"><?php echo $emailError; ?></span>
         <br>
         <label>Website:</label>
         <input type="text" name="website">
@@ -73,7 +73,7 @@
         <input type="radio" name="gender" value="Male">Male
         <input type="radio" name="gender" value="Female">Female
         <input type="radio" name="gender" value="Other
-        ">Other<sup style="color:red">*</sup><span><?php echo $genderError; ?></span>
+        ">Other<sup style="color:red">*</sup><span style="color:red"><?php echo $genderError; ?></span>
         <br>
         <input type="submit">
       </fieldset>
