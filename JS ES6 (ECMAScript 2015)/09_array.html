@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>array</title>
+  </head>
+  <body>
+    <p id="p1"></p>
+    <br>
+    <p id="p5"></p>
+    <br>
+    <p id="p2" style="border:2px solid tomato"></p>
+    <br>
+    <p id="p3"></p>
+    <br>
+    <p id="p4"></p>
+    <script>
+      var arr=[40,70,60,12,10,23,345];
+      document.getElementById('p1').innerHTML="lenght of array = "+arr.length+"<br>"+arr.sort()+"<br>"+arr.reverse(); //its a string sort
+      //for numerical sort
+      document.getElementById('p5').innerHTML=arr.sort(function(a,b){return a-b})+"<br>"+"min of array = "+arr[0]+"<br>"+"max of array = "+arr[arr.length-1]+"<br>"+arr.sort(function(a,b){return b-a});
+      var arr1=['arik','puja','prointy','afrid'];
+      arr1.push('pritilata')
+      var len=arr1.length;
+      arr1[len]='biswas'
+      len=arr1.length;
+      var i;
+      var text="<ul>";
+      for(i=0;i<len;i++)
+      {
+        text=text+"<li>"+arr1[i]+"</li>";
+      }
+      text=text+"</ul>";
+      document.getElementById('p2').innerHTML=text;
+      arr1.pop("biswas");
+      document.getElementById('p3').innerHTML=arr1.toString()+"<br>"+arr1.join("")+"<br>"+arr1.join("*");
+
+      arr2=[12,12,13];
+      document.getElementById('p4').innerHTML=arr1.concat(arr,arr2,'134');
+    </script>
+  </body>
+</html>
