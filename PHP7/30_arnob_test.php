@@ -16,5 +16,5 @@ foreach ($credit as $key1 => $value1)
   }
 }
 $cgpa = $total_gpa_sum / $total_credit;
-echo $cgpa;
+echo round($cgpa,2);
  ?>
