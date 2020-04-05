@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+          $("p").click(function(){
+            $(this).hide();
+          });
+      });
+      $(document).ready(function(){
+        $("#h").click(function(){
+          $(this).hide();
+        });
+      });
+      $(document).ready(function(){
+        $(".k").click(function(){
+          $(this).hide();
+        });
+      });
+    </script>
+    <title>Syntax</title>
+  </head>
+  <body>
+    <p>This is a paragraph</p>
+    <h1 id="h">this is a heading 1</h1>
+    <h3 class="k">this is a heading 3</h3>
+  </body>
+</html>
